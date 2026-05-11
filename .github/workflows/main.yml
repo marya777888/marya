@@ -1,0 +1,11 @@
+name: C++ Check
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Compile C++ code
+      run: g++ main.cpp -o my_program
