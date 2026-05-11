@@ -1,0 +1,11 @@
+name: C++ Check
+
+on: [push] # سيعمل الحارس عند كل عملية رفع كود
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3 # جلب الكود الخاص بك
+    - name: Compile C++ code
+      run: g++ main.cpp -o my_program # محاولة بناء الكود
