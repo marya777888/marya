@@ -15,7 +15,7 @@ public:
 int main() {
     // إنشاء كائن من الصنف
     Robot myRobot;
-    myRobot.name = "Gemini-Assistant";
+    myRobot.name = "version.2";
 
     // استدعاء الدالة
     myRobot.sayHello();
